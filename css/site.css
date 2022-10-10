@@ -1,9 +1,13 @@
 
 
-#callout {
-  background-color: tan;
+#about {
+  background-color: #FEFBEA;
   padding: 20px;
   margin: 10px;
   border: solid 1px black;
   border-radius: 20px;
+}
+
+#portrait {
+  width: 200px;
 }
