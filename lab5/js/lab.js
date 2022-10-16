@@ -14,8 +14,8 @@ carColor = "Blue";
 age = 2022 - carYear;
 
 // output
-document.writeln("Make: "+ carMake + "<br>");
-document.writeln("Model: "+ carmodel + "<br>");
+document.writeln("Make: " + carMake + "<br>");
+document.writeln("Model: " + carModel + "<br>");
 document.writeln("Color: " + carColor + "<br>");
 document.writeln("Year: " + carYear + "<br>");
-document.writeln("Age: " age + " years <br>");
+document.writeln("Age: " + age + " years<br>");
