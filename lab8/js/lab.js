@@ -1,24 +1,29 @@
 /**
  * Author:    Max Schwab
- * Created:   10.19.22
+ * Created:   10.26.22
  *
  * (c) Copyright by Public Domain
  **/
 
-myTransport = ["Car", "Bike", "Carpool", "Bus"];
+ arr = [72, 5, 64, 9, 11, 2]
 
-myMainRide = {
-    make: "Honda",
-    model : "Civic",
-    color : "Blue",
-    year : 2008,
-    age : function() {
-        return 2022 - age;
-    }
-}
-document.writeln("My rides: " + myTransport + "<br>")
-document.writeln("My Main Ride: <pre>",
-    JSON.stringify(myMainRide, null, '\t'), "</pre>");
+ function checkEven(x) {
+     return (x % 2 == 0);
+ };
 
+ // checkEven tests
+ console.log("Test will pass 'true' if 2 is even: " + checkEven(2));
 
-  
+ // My Array
+ console.log("My array: " + arr);
+
+ // checking the dispersal of the function
+ var result = arr.map(checkEven);
+ console.log("This shows the dispersal of the function over the array: " + result);
+
+ var results = arr.map(function(x){
+     var results = x ** 0.5
+     return results
+ });
+
+ console.log("Square root of all array values: " + results);
