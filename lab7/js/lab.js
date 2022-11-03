@@ -6,7 +6,7 @@
 
  // function sortUserName sorts a user input and returns it jumbled
 function sortUserName() {
-   var userName = window.prompt("Hello! Please enter your name so we can fix it.");
+   var userName = window.prompt("Hello! Please enter your name so we can fix it.  ");
    var nameArray = userName.split(" ");
    newNameArray = [];
 
