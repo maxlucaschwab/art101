@@ -32,7 +32,7 @@
     var enterName= document.getElementById("userName").value;
     var sortedName = sortUserName(enterName);
     outputEl.innerHTML=sortedName;
-  })
+  });
 
  document.writeln("Oh hey, I've fixed your name: ",
  sortUserName(), "</br>");
