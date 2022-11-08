@@ -13,19 +13,15 @@ $("#results").append("<button id = 'resultsButton' class = myButton>Press Me to 
 // finds parent elements for each button and adds a class if button is pressed
 $("#challengesButton").click(function(){
   var challengesEl = $("#challengesButton");
-  challengesEl.parent().addClass('special');
-  // removes the button element
-  challengesEl.remove();
+  challengesEl.parent().toggleClass('special');
 });
 
 $("#problemsButton").click(function(){
   var problemsEl = $("#problemsButton");
-  problemsEl.parent().addClass('special');
-  problemsEl.remove();
+  problemsEl.parent().toggleClass('special');
 });
 
 $("#resultsButton").click(function(){
   var resultsEl = $("#resultsButton");
-  resultsEl.parent().addClass('special');
-  resultsEl.remove();
+  resultsEl.parent().toggleClass('special');
 });
