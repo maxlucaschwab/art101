@@ -8,10 +8,12 @@
   border-radius: 20px;
 }
 
+/* sets the portrait size */
 #portrait {
   width: 200px;
 }
 
+/* Style for dropdown button */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -25,6 +27,7 @@
 
 }
 
+/* style for dropdown elements inside the main folder */
 .dropdownEls {
   display: none;
   position: absolute;
@@ -35,6 +38,7 @@
   z-index: 1;
 }
 
+/* displays dropdown elements when mouse hovers over main dropdown element */
 .dropdown:hover .dropdownEls {
   display: block;
 }
