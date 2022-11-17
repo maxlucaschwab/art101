@@ -7,22 +7,53 @@
   <title> Lab 13 - Loops</title>
 </head>
 <body>
-  <h1>Challenges</h1>
-  <div id = "challenges">
-    <p>We encountered a lot of challenges regarding actually calling the function and printing the values to the website</p>
+  <div id = report>
+    <h1>Challenges</h1>
+    <div id = "challenges">
+      <p>We encountered a lot of challenges regarding actually calling the function and printing the values to the website</p>
+    </div>
+    <h1>Problems</h1>
+    <div id = "problems">
+      <p>More problems included creating a box that wrapped all the values cleanly in the final site.</p>
+    </div>
+    <h1>Results</h1>
+    <div id = "results">
+      <p>The results are shown below. We weren't able to display them cleanly, but they're all working and there!</p>
+    </div>
   </div>
-  <h1>Problems</h1>
-  <div id = "problems">
-    <p>More problems included creating a box that wrapped all the values cleanly in the final site.</p>
+  <div id = inputs>
+    Limit: <input type = "number" min="0" max="1000" id="maximum"><br>
+    What factor prints what?<br>
+    <table>
+      <tr>
+        <th>Factor</th>
+        <th>Prints:</th>
+      </tr>
+      <tr>
+        <td><input type = "number" min="0" max="23" id = "num0"></td>
+        <td><input text = "text" id = "text0"></td>
+      </tr>
+      <tr>
+        <td><input type = "number" min="0" max="23" id = "num1"></td>
+        <td><input text = "text" id = "text1"></td>
+      </tr>
+      <tr>
+        <td><input type = "number" min="0" max="23" id = "num2"></td>
+        <td><input text = "text" id = "text2"></td>
+      </tr>
+      <tr>
+        <td><input type = "number" min="0" max="23" id = "num3"></td>
+        <td><input text = "text" id = "text3"></td>
+      </tr>
+    </table>
+    <button id="submit">Run</button>
   </div>
-  <h1>Results</h1>
-  <div id = "results">
-    <p>The results are shown below. We weren't able to display them cleanly, but they're all working and there!</p>
-  </div>
-  <br></br>
+  <h3>Output</h3>
   <div id = "output"></div>
-  <br></br>
-  <div>
-  <a href="js\lab.js" class = "special" id = "jsLink">Link to JavaScript</a>
+</body>
+<footer>
+  <div id = "links">
+    <a href="js\lab.js" class = "special" id = "jsLink">Link to JavaScript</a>
   </div>
+</footer>
 </html>

@@ -1,31 +1,24 @@
 /**
  * Author:    Max Schwab & Thomas Castillo
- * Created:   11.14.22
+ * Created:   11.17.22
  *
  * (c) Copyright by Public Domain
  **/
 
 outputEl = document.getElementById("output");
 
-function FizzBuzz() {
-  arr = []
-  for (var i = 1; i <= 200; i++) {
-    var num = ""
-    if (i % 3 == 0){
-      num += "Fizz"
+function FizzBuzz(max, factorObj) {
+  for (var i = 1; i <= max; i++) {
+    var output = "";
+    for(factor in factorObj) {
+      if (i % factor == 0) {
+        output += factorObj[factor];
       }
-    if (i % 5 == 0){
-      num += "Buzz"
-      }
-    if (i % 7 == 0){
-      num += "Boom"
-      }
-    if (num){
-      num = i + " - " + num + "!"
-    } else {
-      num = i
     }
-   outputToPage(num)
+    if (output) {
+      output = " - " + output + "!";
+    }
+    outputToPage(i.toString() + output);
    }
 };
 
@@ -35,4 +28,42 @@ function outputToPage(str) {
     outputEl.appendChild(newEl);
 }
 
-$("#output").html(FizzBuzz())
+
+$("#submit").click(function(){
+  console.log("button works");
+
+  // finds max value
+  var max = $("#maximum").val();
+  console.log("Maximum value: " + max);
+  if (!max) {
+    reportError("Provide a maximum number.");
+  }
+
+  // list of factor inputs
+  arrInputs = {0:"#num0", 1:"#num1", 2:"#num2", 3:"#num3"};
+  inputList = [];
+  for (input in arrInputs){
+    target = arrInputs[input];
+    inputList[input] = $(target).val();
+    console.log("Input " + input + ": " + inputList[input])
+  }
+
+  // list of outputs for factors
+  arrTexts = {0:"#text0", 1:"#text1", 2:"#text2", 3:"#text3"};
+  textList = [];
+  for (input in arrTexts){
+    target = arrTexts[input];
+    textList[input] = $(target).val();
+    console.log("Input " + input + ": " + textList[input]);
+  }
+
+  // final array to send to function
+  arrFinal = {}
+  for (var items in arrInputs) {
+    arrFinal[inputList[items]] = textList[items];
+    console.log(arrFinal);
+  }
+
+  FizzBuzz(max, arrFinal);
+
+});
