@@ -1,0 +1,109 @@
+
+.image {
+  width: 500px;
+}
+
+body {
+  padding: 20px;
+  font-size: 15px;
+}
+
+p{
+  margin: 0 auto;
+  max-width: 1000px;
+  border: solid 5px #ccc;
+  padding: 10px;
+}
+
+#output{
+  margin: 0 auto;
+  max-width: 5000px;
+  border: solid 5px #ccc;
+  padding: 5px;
+}
+
+
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+#Overflow {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+
+}
+#lab-13{
+
+  background-color: red;
+  padding: 10px;
+  margin: 10px;
+  border: solid 10px red;
+  border: solid 10px red;
+
+  }
+  p.mix{border-style: dotted dashed solid double;}
+
+  body {
+    background-color: lightblue;
+  }
+
+
+#jsLink {
+  font-size:15px;
+}
+div {
+  box-shadow: 5px 5px red;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h1 {
+  border: 0px solid red;
+}
+
+h2 {
+  border: 0px dotted blue;
+}
+
+div {
+  border: double;
+}
+.special {
+  text-align:center;
+  text-transform:uppercase;
+  font-size:15px;
+  font-weight: bold;
+  font-family:'Verdana';
+  padding:30px;
+  background-image:url("../img/colorSwirls.jpg");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.myButton {
+  -webkit-text-fill-color: red;
+}
+
+#output p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#output.cols {
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 200px; /* Firefox */
+    column-width: 200px;
+}
+
+div#output {
+    border: solid 0px #ccc;
+    padding: 0px;
+
+  .box {
+  inline-size: 150px;
+}
